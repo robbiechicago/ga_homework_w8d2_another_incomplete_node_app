@@ -1,0 +1,9 @@
+var mongoose = require('mongoose');
+
+var Day = mongoose.Schema({
+  entryDate: Date,
+  entry: String,
+  emotionalState: String
+});
+
+module.exports = mongoose.model('Day', Day);
